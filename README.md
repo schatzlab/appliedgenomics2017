@@ -26,9 +26,9 @@ The goal of this course is to study the leading computational and quantitative a
 |2. | Th 2/2  | Sequencing Technologies | * [Coming of age: ten years of next-generation sequencing technologies](http://www.nature.com/nrg/journal/v17/n6/full/nrg.2016.49.html) <br> * [High‐throughput sequencing for biology and medicine](http://msb.embopress.org/content/9/1/640)
 |3. | Tu 2/7  | Whole Genome Assembly and Alignment | Quake, Velvet, FALCON-unzip, MUMmer, BUSCO |
 |4. | Th 2/9  | Genome Annotation | Glimmer, MAKER, HMMs |
-|5. | Tu 2/14 | Guest Lecture by Ben Langmead |
-|6. | Th 2/16 | Guest Lecture by Ben Langmead |
-|7. | Tu 2/21 | Variant Analysis 1 | FreeBayes, GATK, Scalpel, CNVnator, LUMPY |
+|5. | Tu 2/14 | Guest Lecture by Ben Langmead | Bowtie, BWA, SAM/BAM, IGV, etc |
+|6. | Th 2/16 | Guest Lecture by Ben Langmead | Bowtie, BWA, SAM/BAM, IGV, etc |
+|7. | Tu 2/21 | Variant Analysis 1 | SamTools, FreeBayes, GATK, Scalpel, CNVnator, LUMPY |
 |8. | Th 2/23 | Variant Analysis 2 | 1000 Genomes, ExAC, VCFtools, ANNOVAR, CADD, FitCons, VAAST |
 |9. | Tu 2/28 | Expression Analysis 1 | TopHat, Cufflinks, STAR, Trinity, Trinotate |
 |10. | Th 3/2  | Expression Analysis 2 | Sailfish, Salmon, Kalisto |
