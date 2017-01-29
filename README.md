@@ -3,7 +3,7 @@
 Class Hours: Tuesday + Thursday @ 1:30p - 2:45p in Shaffer 304 <br>
 Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 
-The goal of this course is to study the leading computational and quantitative approaches for comparing and analyzing genomes starting from raw sequencing data. The course will focus on human genomics and human medical applications, but the techniques will be broadly applicable across the tree of life. The topics will include genome assembly & comparative genomics, variant identification & analysis, gene expression & regulation, personal genome analysis, and cancer genomics. The grading will be based on assignments, a midterm exam, class presentations, and a significant class project. There are no course prerequisites, although it will require familiarity with UNIX scripting and/or programming to complete the assignments and course project.
+The goal of this course is to study the leading computational and quantitative approaches for comparing and analyzing genomes starting from raw sequencing data. The course will focus on human genomics and human medical applications, but the techniques will be broadly applicable across the tree of life. The topics will include genome assembly & comparative genomics, variant identification & analysis, gene expression & regulation, personal genome analysis, and cancer genomics. The grading will be based on assignments, a midterm exam, class presentations, and a significant class project. There are no formal course prerequisites, although the course will require familiarity with UNIX scripting and/or programming to complete the assignments and course project. **The primary goal of the course is for students to be grounded in theory and leave the course empowered to conduct independent genomic analyses.**
 
 ### Prerequisites
 - Online introduction to Unix/Linux. Students must complete one of the following online tutorials (or both) before class begins. 
@@ -20,35 +20,35 @@ The goal of this course is to study the leading computational and quantitative a
 - [Algorithms for DNA Sequencing by Ben Langmead](http://www.langmead-lab.org/teaching-materials/)
 
 ## Schedule
-| Date | Lecture | Readings | Assignment |
-|:-----|:--------|:---------|:-----------|
-| Tu 1/31 | Introduction | * [Biological data sciences in genome research](http://genome.cshlp.org/content/25/10/1417.full) <br> * [Big Data: Astronomical or Genomical?](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002195) | [Sign Up for Piazza](https://piazza.com/jhu/spring2017/600649/home) |
-| Th 2/2  | Sequencing Technologies | * [Coming of age: ten years of next-generation sequencing technologies](http://www.nature.com/nrg/journal/v17/n6/full/nrg.2016.49.html) <br> * [High‐throughput sequencing for biology and medicine](http://msb.embopress.org/content/9/1/640)
-| Tu 2/7  | Whole Genome Assembly and Alignment |
-| Th 2/9  | Genome Annotation |
-| Tu 2/14 | Guest Lecture by Ben Langmead |
-| Th 2/16 | Guest Lecture by Ben Langmead |
-| Tu 2/21 | Variant Analysis 1 |
-| Th 2/23 | Variant Analysis 2 |
-| Tu 2/28 | Expression Analysis 1 |
-| Th 3/2  | Expression Analysis 2 |
-| Tu 3/7  | Gene Regulation 1 |
-| Th 3/9  | Gene Regulation 2 |
-| Tu 3/14 |
-| Th 3/16 |
+| Date | Lecture | Readings & Resources | Assignment |
+|:-----|:--------|:---------------------|:-----------|
+| Tu 1/31 | 1. Introduction | * [Biological data sciences in genome research](http://genome.cshlp.org/content/25/10/1417.full) <br> * [Big Data: Astronomical or Genomical?](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002195) | [Sign Up for Piazza](https://piazza.com/jhu/spring2017/600649/home) |
+| Th 2/2  | 2. Sequencing Technologies | * [Coming of age: ten years of next-generation sequencing technologies](http://www.nature.com/nrg/journal/v17/n6/full/nrg.2016.49.html) <br> * [High‐throughput sequencing for biology and medicine](http://msb.embopress.org/content/9/1/640)
+| Tu 2/7  | 3. Whole Genome Assembly and Alignment | Quake, Velvet, FALCON-unzip, MUMmer, BUSCO |
+| Th 2/9  | 4. Genome Annotation | Glimmer, MAKER, HMMs |
+| Tu 2/14 | 5. Guest Lecture by Ben Langmead |
+| Th 2/16 | 6. Guest Lecture by Ben Langmead |
+| Tu 2/21 | 7. Variant Analysis 1 | FreeBayes, GATK, Scalpel, CNVnator, LUMPY |
+| Th 2/23 | 8. Variant Analysis 2 | VCFtools, ANNOVAR, CADD, FitCons, VAAST |
+| Tu 2/28 | 9. Expression Analysis 1 | TopHat, Cufflinks, STAR, Trinity, Trinotate |
+| Th 3/2  | 10. Expression Analysis 2 | Sailfish, Salmon, Kalisto |
+| Tu 3/7  | 11. Functional Analysis 1 | Chip-seq, Methyl-seq, DNase-seq |
+| Th 3/9  | 12. Functional Analysis 2 | Single Cell Analysis (Monocle, Ginkgo) |
+| Tu 3/14 | 13. Genome Arithmetic | BEDTools, Plane-Sweep Alg |
+| Th 3/16 | 14. Statistics for Genomics | Probability Distributions, Tests for significance, Data visualization |
 | Tu 3/21 | *Spring Break!*
 | Th 3/23 | *Spring Break!*
-| Tu 3/28 |
-| Th 3/30 |
-| Tu 4/4  |
-| Th 4/6  |
-| Tu 4/11 |
-| Th 4/13 |
-| Tu 4/18 |
-| Th 4/20 |
-| Tu 4/25 | DNA Day!
-| Th 4/27 |
-| Tu 5/2  |
-| Th 5/4  | Last Day of Class
+| Tu 3/28 | 15. Gene Regulation 1 | ChromHMM, Segway |
+| Th 3/30 | 16. Gene Regulation 2 | ENCODE, modENCODE, Roadmap Epigenome |
+| Tu 4/4  | 17. Midterm Exam
+| Th 4/6  | 18. Human Evolution | Ancient Hominids, Mammalian Evolution, LUCA |
+| Tu 4/11 | 19. Human Genomics | 1000 Genomes, GTex, ExAC |
+| Th 4/13 | 20. Microbiome and Metagenomics | HMP, Kraken, MEGAN, PhymmBL |
+| Tu 4/18 | 21. Cancer Genomics 1 | TCGA, ICGC, Cellularity, Clonality, Tumor Evolution |
+| Th 4/20 | 22. Cancer Genomics 2 | FunSeq, GECCO, HotNet |
+| Tu 4/25 | 23. Genomic Futures 1 | Personalized Medicine (AlleleSeq, SnyderOme, Prenatal screeing), Genomic Privacy (Surname Inference) |
+| Th 4/27 | 24. Genomic Futures 2 | Digital Immune System |
+| Tu 5/2  | 25. Project Presentations 1 |
+| Th 5/4  | 26. Project Presentations 2 |
 
 
