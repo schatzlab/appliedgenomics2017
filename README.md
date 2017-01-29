@@ -1,8 +1,15 @@
 # JHU EN.600.649: Computational Genomics: Applied Comparative Genomics
-[Michael Schatz](http://schatzlab.cshl.edu) <br>
-Tuesday + Thursday @ 1:30p - 2:45p in Shaffer 304
+[Michael Schatz](http://schatzlab.cshl.edu) (mschatz @ cs.jhu.edu) <br>
+Class Hours: Tuesday + Thursday @ 1:30p - 2:45p in Shaffer 304 <br>
+Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 
 The goal of this course is to study the leading computational and quantitative approaches for comparing and analyzing genomes starting from raw sequencing data. The course will focus on human genomics and human medical applications, but the techniques will be broadly applicable across the tree of life. The topics will include genome assembly & comparative genomics, variant identification & analysis, gene expression & regulation, personal genome analysis, and cancer genomics. The grading will be based on assignments, a midterm & final exam, class presentations, and a significant class project. There are no course prerequisites, although it will require familiarity with UNIX scripting and/or programming to complete the assignments and course project.
+
+### Prerequisites
+- Online introduction to Unix/Linux. Students must complete one of the following online tutorials (or both) before class begins. 
+  - [Code academy's Intro to Unix](https://www.codecademy.com/en/courses/learn-the-command-line/lessons/environment/exercises/bash-profile)
+  - [Command line bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=9xnbkx6eaof)
+- An Apple or Linux Machine, or Install  [VirtualBox](https://www.virtualbox.org/)
 
 ## Course Resources:
 - [Syllabus and Policies]()
