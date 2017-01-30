@@ -6,7 +6,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 **The primary goal of the course is for students to be grounded in theory and leave the course empowered to conduct independent genomic analyses.** We will study the leading computational and quantitative approaches for comparing and analyzing genomes starting from raw sequencing data. The course will focus on human genomics and human medical applications, but the techniques will be broadly applicable across the tree of life. The topics will include genome assembly & comparative genomics, variant identification & analysis, gene expression & regulation, personal genome analysis, and cancer genomics. The grading will be based on assignments, a midterm exam, class presentations, and a significant class project. There are no formal course prerequisites, although the course will require familiarity with UNIX scripting and/or programming to complete the assignments and course project. 
 
 ### Prerequisites
-- Online introduction to Unix/Linux. Students must complete one of the following online tutorials (or both) before class begins. 
+- Online introduction to Unix/Linux. Students are strongly recommended to complete one of the following online tutorials (or both) before class begins. 
   - [Code academy's Intro to Unix](https://www.codecademy.com/en/courses/learn-the-command-line/lessons/environment/exercises/bash-profile)
   - [Command line bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=9xnbkx6eaof)
 - Access to an Apple or Linux Machine, or Install [VirtualBox](https://www.virtualbox.org/)
