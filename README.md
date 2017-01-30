@@ -12,7 +12,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - Access to an Apple or Linux Machine, or Install [VirtualBox](https://www.virtualbox.org/)
 
 ## Course Resources:
-- [Syllabus and Policies]()
+- [Syllabus and Policies](https://github.com/schatzlab/appliedgenomics/tree/master/policies)
 - [Piazza Discussion Board](https://piazza.com/jhu/spring2017/600649/home)
 
 ## Related Courses
