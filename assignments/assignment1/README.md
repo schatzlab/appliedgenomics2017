@@ -15,7 +15,7 @@ Download the reads and reference genome from: https://github.com/schatzlab/appli
 
 Note I have provided both paired-end and mate-pairs reads (see included README for details). Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
 
-- Question 1a. How long is the refernce genome? [Hint: Try samtools faidx]
+- Question 1a. How long is the reference genome? [Hint: Try samtools faidx]
 - Question 1b. How many reads are provided and how long are they? Make sure to measure each file separately [Hint: Try FastQC]
 - Question 1c. How much coverage do you expect to have? [Hint: see slides for formula]
 - Question 1d. Plot the average quality value across the length of the reads [Hint: Screenshot from FastQC]
