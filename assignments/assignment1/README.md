@@ -42,7 +42,7 @@ Assemble the reads using `ALLPATHS-LG`. Allpaths will *not* run on Mac or Window
 
 - Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try `dnadiff`]
 - Question 4b. What is the length of the longest alignment [Hint: try `nucmer` and `show-coords`]
-- Question 4c. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try `dnadiff`]
+- Question 4c. How many insertions and deletions are in the assembly? [Hint: try `dnadiff`]
 - Question 4d. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying `nucmer` and `mummerplot`]
 
 #### Question 5. Decoding the insertion [10 pts]
@@ -61,7 +61,7 @@ The solutions to the above questions should be submitted as a single PDF documen
 
 #### [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) - Raw read quality assessment
 
-Make sure to make the script executable so you can run it on the command line:
+After downloading make sure to make the script executable so you can run it on the command line:
 ```
 $ chmod +x fastqc
 $ ./fastqc /path/to/reads.fq
@@ -69,20 +69,21 @@ $ ./fastqc /path/to/reads.fq
 
 #### [Jellyfish](http://www.genome.umd.edu/jellyfish.html) - Fast Kmer Counting
 
-Download the package and compile it like this:
+Jellyfish requires a 64-bit operating system. Download the package and compile it like this:
 
 ```
-$ sudo apt-get install g++-4.7
 $ tar xzvf jellyfish-2.2.6.tgz
 $ cd jellyfish-2.2.6
-$ CXX=g++-4.7 ./configure --prefix=`pwd`
+./configure --prefix=`pwd`
 $ make
 $ make install
+```
 
-- [GenomeScope](http://www.genomescope.org/) - Analyze Kmer Profile to determine genome size and other properties
-- [ALLPATHS-LG](http://software.broadinstitute.org/allpaths-lg/blog/?page_id=12) - Short Read Assembler. Note: Only works under linux
-- [MUMmer](http://mummer.sourceforge.net/) - Whole Genome Alignment
-- [SAMTOOLS](http://www.htslib.org/) - Extract part of a genome sequence using 'samtools faidx'
+#### [GenomeScope](http://www.genomescope.org/) - Analyze Kmer Profile to determine genome size and other properties
 
+####  [ALLPATHS-LG](http://software.broadinstitute.org/allpaths-lg/blog/?page_id=12) - Short Read Assembler. Note: Only works under linux
 
+#### [MUMmer](http://mummer.sourceforge.net/) - Whole Genome Alignment
+
+#### [SAMTOOLS](http://www.htslib.org/) - Extract part of a genome sequence using 'samtools faidx'
 
