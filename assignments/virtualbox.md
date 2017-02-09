@@ -4,8 +4,9 @@ The standard development environment for this course is Lubuntu 16.04 LTS, which
 In order to install and use our environment follow these steps on your laptop:
 
 1. Install VirtualBox, or upgrade your version if you already have it installed.  VirtualBox is software that allows you to create and work on virtual devices as separate instances within your machine. You can download it here: https://www.virtualbox.org/
-
-2. Download this appliance (large file, so expect it to take a while): https://www.cs.jhu.edu/~phf/files/Lubuntu_16.04_LTS_i386_Reference.ova (2.7 GB file, up to 8 GB required)
+ 
+2. Download the 64-bit Lubuntu 16.10 Yakkety Yak appliance. Make sure to download the 64 bit version! (large file, so expect it to take a while): 
+http://www.osboxes.org/lubuntu/ (2.7 GB file, up to 8 GB required)
 
 3. Follow the directions here to import the virtual box:
 https://blogs.oracle.com/oswald/entry/importing_a_vdi_in_virtualbox
@@ -14,7 +15,7 @@ https://blogs.oracle.com/oswald/entry/importing_a_vdi_in_virtualbox
 
 5. Double-click on this virtual machine to start it up (or single-click and then hit the "start" icon).  If you get an error message, read the details and follow the instructions to update as necessary.  (For example, you might have to install the Oracle VM Extension Pack from https://www.virtualbox.org/wiki/Downloads to get the USB controller to work.)
 
-6. Once your Lubuntu machine boots, you'll be prompted to login.  The default username is "student" which is also the default password; you should probably change your password.
+6. Once your Lubuntu machine boots, you'll be prompted to login.  The default username is "osboxes" and the default password is "osboxes.org"; feel free to create a new username or change the password
 
 7. Explore your new machine-in-a-machine to see what software is already there, by clicking the left bottom start button.  Keep in mind that the files in your virtual environment can only be accessed from within that virtual environment, not from your usual laptop software.  So Lubuntu has a web browser, office-like apps, accessories, etc.
 
