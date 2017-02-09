@@ -33,7 +33,7 @@ From the VirtualBox Devices menu, click "Install Guest Additions CD Image..."
 Then run this at the terminal:
 
 ```
-$ sudo /media/student/VBOXADDITIONS_5.1.14_112924/VBoxLinuxAdditions.run
+$ sudo /media/osboxes/VBOXADDITIONS_5.1.14_112924/VBoxLinuxAdditions.run
 ```
  
 #### Powering Down
