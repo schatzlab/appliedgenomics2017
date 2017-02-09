@@ -6,6 +6,9 @@ Due Date: Thursday, Feb. 23, 2017 @ 11:59pm <br>
 
 In this assignment, you are given a set of unassembled reads from a mysterious pathogen that contains a secret message encoded someplace in the genome. The secret message will be recognizable as a novel insertion of sequence not found in the reference. Your task is to assess the quality of the reads, assemble the genome, identify, and decode the secret message. If all goes well the secret message should decode into a recognizable english text, otherwise doublecheck your coordinates and try again. As a reminder, any questions about the assignment should be posted to [Piazza](https://piazza.com/jhu/spring2017/600649/home)
 
+Some of the tools you will need to use only run in a linux environment. Allpaths, for example, will *not* work under Mac, even though it will compile. If you do not have access to a linux machine, download and install a virtual machine following the directions here: https://github.com/schatzlab/appliedgenomics/blob/master/assignments/virtualbox.md
+
+
 #### Question 1. Coverage Analysis [10 pts]
 
 Download the reads and reference genome from: https://github.com/schatzlab/appliedgenomics/raw/master/assignments/assignment1/asm.tgz
@@ -15,6 +18,7 @@ Note I have provided both paired-end and mate-pairs reads (see included README f
 - Question 1a. How long is the refernce genome? [Hint: Try samtools faidx]
 - Question 1b. How many reads are provided and how long are they? Make sure to measure each file separately [Hint: Try FastQC]
 - Question 1c. How much coverage do you expect to have? [Hint: see slides for formula]
+- Question 1d. Plot the average quality value across the length of the reads [Hint: Screenshot from FastQC]
 
 #### Question 2. Kmer Analysis [10 pts]
 
@@ -23,25 +27,29 @@ Use Jellyfish to count the 21-mers in the reads data. Make sure to use the "-C" 
 - Question 2a. How many kmers occur 50 times? [Hint: try jellyfish histo]
 - Question 2b. What are the top 10 most frequently occurring kmers [Hint: try jellyfish dump along with head]
 - Question 2c. What is the estimated genome size based on the kmer frequencies? [Hint: upload the jellyfish histogram to GenomeScope]
+- Question 2d. How well does the GenomeScope genome size estimate compare to the reference genome?
 
 #### Question 3. De novo assembly [10 pts]
 
-Assemble the reads using ALLPATHS-LG. Allpaths will *not* run on Mac or Windows, you must use a linux environment. If you do not have access to a linux machine, download and install a virtual machine following the directions here: http://www.cs.jhu.edu/~joanne/virtualBox.html
+Assemble the reads using ALLPATHS-LG. Allpaths will *not* run on Mac or Windows, you must use a linux environment. 
 
 - Question 3a. How many contigs were produced? [Hint: try 'samtools faidx', and 'wc']
-- Question 3b. What is the size of your large contig? [Hint: check 'samtools faidx']
-- Question 3c. What is the contig N50 size? [Hint: Write a short script, or use excel]
+- Question 3b. What is the total length of the contigs? [Hint: write a short script of the samtools faidx output]
+- Question 3c. What is the size of your large contig? [Hint: check 'samtools faidx']
+- Question 3d. What is the contig N50 size? [Hint: Write a short script, or use excel]
 
 #### Question 4. Whole Genome Alignment [10 pts]
 
 - Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try 'dnadiff']
-- Question 4b. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try 'dnadiff']
-- Question 4c. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying 'nucmer' and 'mummerplot']
+- Question 4b. What is the length of the longest alignment [Hint: try 'nucmer' and 'show-coords']
+- Question 4c. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try 'dnadiff']
+- Question 4d. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying 'nucmer' and 'mummerplot']
 
 #### Question 5. Decoding the insertion [10 pts]
 - Question 5a. What is the position of the insertion on the reference? [Hint: try 'show-coords']
 - Question 5b. How long is the novel insertion? [Hint: try 'show-coords']
-- Question 5c. What is the secret message? [Hint: try 'samtools faidx' to extract the secret message, then 'dna-encode.pl -d' to decode]
+- Question 5c. What is the DNA sequence of the encoded message? [Hint: try 'samtools faidx' to extract the insertion]
+- Question 5d. What is the secret message? [Hint: run 'dna-encode.pl -d' to decode the string from 5c]
 
 
 ### Packaging
