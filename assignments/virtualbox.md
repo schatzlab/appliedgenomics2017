@@ -40,10 +40,10 @@ Here are some packages that will be useful regardless of the course/programming 
 
 virtualbox-guest-utils, virtualbox-guest-x11, virtualbox-guest-dkms - You should install these packages first thing, and then re-boot your virtual machine. These packages provide a better interface between your "host" operating system, and the "guest" linux operating system running on the virtual machine. They will allow you to resize your virtual desktop, and offer better cursor integration and more responsive input handling. Once installed, go to "Preferences -> Monitor Settings" within your virtual machine to change the desktop resolution. These packages will also let you copy/paste from non-virtual-machine programs, as long as you have your VirtualBox Settings configured to allow "bidirectional" copy/paste (under the "Advanced" tab of the "General" settings).
 
-emacs - a very popular editor
-vim - another very popular editor
-vim-gtk - a GUI version of vim with a bunch of menus, easier to use, better integration with other GUI windows
-git - version control program you may be using
+- emacs - a very popular editor
+- vim - another very popular editor
+- vim-gtk - a GUI version of vim with a bunch of menus, easier to use, better integration with other GUI windows
+- git - version control program you may be using
 
 There is also a command-line interface to the package management system, called apt-get. To install a package using it, open a terminal and type sudo apt-get install packagename (substituting the actual name of the package you want to install). It can be useful for installing multiple packages at once; for instance, to install all the recommended packages above, simply type or copy/paste the following into a terminal (though unfortunately, copy/paste won't work until you install the virtualbox-guest packages and enable it in your virtualbox settings):
 
