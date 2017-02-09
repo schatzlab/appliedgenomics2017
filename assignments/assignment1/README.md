@@ -15,35 +15,35 @@ Download the reads and reference genome from: https://github.com/schatzlab/appli
 
 Note I have provided both paired-end and mate-pairs reads (see included README for details). Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
 
-- Question 1a. How long is the reference genome? [Hint: Try samtools faidx]
-- Question 1b. How many reads are provided and how long are they? Make sure to measure each file separately [Hint: Try FastQC]
+- Question 1a. How long is the reference genome? [Hint: Try `samtools faidx`]
+- Question 1b. How many reads are provided and how long are they? Make sure to measure each file separately [Hint: Try `FastQC`]
 - Question 1c. How much coverage do you expect to have? [Hint: see slides for formula]
-- Question 1d. Plot the average quality value across the length of the reads [Hint: Screenshot from FastQC]
+- Question 1d. Plot the average quality value across the length of the reads [Hint: Screenshot from `FastQC`]
 
 #### Question 2. Kmer Analysis [10 pts]
 
-Use Jellyfish to count the 21-mers in the reads data. Make sure to use the "-C" flag to count cannonical kmers, otherwise your analysis will not correctly account for the fact that your reads come from either strand of DNA.
+Use `Jellyfish` to count the 21-mers in the reads data. Make sure to use the "-C" flag to count cannonical kmers, otherwise your analysis will not correctly account for the fact that your reads come from either strand of DNA.
 
-- Question 2a. How many kmers occur 50 times? [Hint: try jellyfish histo]
-- Question 2b. What are the top 10 most frequently occurring kmers [Hint: try jellyfish dump along with head]
+- Question 2a. How many kmers occur 50 times? [Hint: try `jellyfish histo`]
+- Question 2b. What are the top 10 most frequently occurring kmers [Hint: try `jellyfish dump` along with `sort` and `head`]
 - Question 2c. What is the estimated genome size based on the kmer frequencies? [Hint: upload the jellyfish histogram to GenomeScope]
 - Question 2d. How well does the GenomeScope genome size estimate compare to the reference genome?
 
 #### Question 3. De novo assembly [10 pts]
 
-Assemble the reads using ALLPATHS-LG. Allpaths will *not* run on Mac or Windows, you must use a linux environment. 
+Assemble the reads using `ALLPATHS-LG`. Allpaths will *not* run on Mac or Windows, you must use a linux environment. Note I have included the in_libs.csv and in_groups.csv files that you use can use.
 
-- Question 3a. How many contigs were produced? [Hint: try 'samtools faidx', and 'wc']
-- Question 3b. What is the total length of the contigs? [Hint: write a short script of the samtools faidx output]
-- Question 3c. What is the size of your large contig? [Hint: check 'samtools faidx']
+- Question 3a. How many contigs were produced? [Hint: try `grep -c '>' contigs.fa`]
+- Question 3b. What is the total length of the contigs? [Hint: try `samtools faidx`, plus a short script/excel]
+- Question 3c. What is the size of your large contig? [Hint: check `samtools faidx` plus `sort -n`]
 - Question 3d. What is the contig N50 size? [Hint: Write a short script, or use excel]
 
 #### Question 4. Whole Genome Alignment [10 pts]
 
-- Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try 'dnadiff']
-- Question 4b. What is the length of the longest alignment [Hint: try 'nucmer' and 'show-coords']
-- Question 4c. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try 'dnadiff']
-- Question 4d. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying 'nucmer' and 'mummerplot']
+- Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try `dnadiff`]
+- Question 4b. What is the length of the longest alignment [Hint: try `nucmer` and `show-coords`]
+- Question 4c. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try `dnadiff`]
+- Question 4d. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying `nucmer' and 'mummerplot']
 
 #### Question 5. Decoding the insertion [10 pts]
 - Question 5a. What is the position of the insertion on the reference? [Hint: try 'show-coords']
