@@ -7,7 +7,8 @@ In order to install and use our environment follow these steps on your laptop:
 
 2. Download this appliance (large file, so expect it to take a while): https://www.cs.jhu.edu/~phf/files/Lubuntu_16.04_LTS_i386_Reference.ova (2.7 GB file, up to 8 GB required)
 
-3. Open VirtualBox, from the File menu select "Import Appliance" and then use the file browser icon to find the .ova file you just downloaded.  Do not change any of the settings.  Click on Import.
+3. Follow the directions here to import the virtual box:
+https://blogs.oracle.com/oswald/entry/importing_a_vdi_in_virtualbox
 
 4. When the install finishes, you will have a virtual machine called "Lubuntu 16.04 LTS" showing in the left menu of your VirtualBox device manager.  
 
