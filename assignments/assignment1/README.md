@@ -8,7 +8,7 @@ In this assignment, you are given a set of unassembled reads from a mysterious p
 
 #### Question 1. Coverage Analysis [10 pts]
 
-Download the reads and reference genome from: https://github.com/schatzlab/appliedgenomics/raw/master/assignments/assignment1/asm.tgz. 
+Download the reads and reference genome from: https://github.com/schatzlab/appliedgenomics/raw/master/assignments/assignment1/asm.tgz
 
 Note I have provided both paired-end and mate-pairs reads (see included README for details). Make sure to look at all of the reads for the coverage analysis and kmer analysis, as well as in the assembly.
 
