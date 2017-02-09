@@ -4,7 +4,7 @@ Due Date: Thursday, Feb. 23, 2017 @ 11:59pm <br>
 
 ### Assignment Overview
 
-In this first assignment, you are given a set of unassembled reads from a mysterious pathogen that contains a secret message encoded someplace in the genome as a novel insertion. Your task is to assess the quality of the reads, assemble the genome, identify and decode the secret message. If all goes well the secret message should decode into a recognizable english text, otherwise doublecheck your offsets and try again. As a reminder, any questions about the assignment should be posted to [Piazza](https://piazza.com/jhu/spring2017/600649/home)
+In this assignment, you are given a set of unassembled reads from a mysterious pathogen that contains a secret message encoded someplace in the genome. The secret message will be recognizable as a novel insertion of sequence not found in the reference. Your task is to assess the quality of the reads, assemble the genome, identify, and decode the secret message. If all goes well the secret message should decode into a recognizable english text, otherwise doublecheck your coordinates and try again. As a reminder, any questions about the assignment should be posted to [Piazza](https://piazza.com/jhu/spring2017/600649/home)
 
 #### Question 1. Coverage Analysis [10 pts]
 
@@ -30,12 +30,16 @@ Assemble the reads using ALLPATHS-LG. Allpaths will *not* run on Mac or Windows,
 - Question 3b. What is the size of your large contig? [Hint: check 'samtools faidx']
 - Question 3c. What is the contig N50 size? [Hint: Write a short script, or use excel]
 
-#### Question 4. Finding and decoding the secret message [10 pts]
+#### Question 4. Whole Genome Alignment [10 pts]
 
-- Question 4a. What is the average identify of your assembly compared to the reference [Hint: try 'dnadiff']
-- Question 4b. Make a dotplot of your assembled contigs aligned to the reference genome [Hint: trying 'nucmer' and 'mummerplot']
-- Question 4c. How long is the novel insertion? [Hint: try 'show-coords']
-- Question 4d. What is the secret message? [Hint: try 'samtools faidx' to extract the secret message, then 'dna-encode.pl -d' to decode]
+- Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try 'dnadiff']
+- Question 4b. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try 'dnadiff']
+- Question 4c. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying 'nucmer' and 'mummerplot']
+
+#### Question 5. Decoding the insertion [10 pts]
+- Question 5a. What is the position of the insertion on the reference? [Hint: try 'show-coords']
+- Question 5b. How long is the novel insertion? [Hint: try 'show-coords']
+- Question 5c. What is the secret message? [Hint: try 'samtools faidx' to extract the secret message, then 'dna-encode.pl -d' to decode]
 
 
 ### Packaging
