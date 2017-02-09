@@ -26,7 +26,7 @@ Use `Jellyfish` to count the 21-mers in the reads data. Make sure to use the "-C
 
 - Question 2a. How many kmers occur 50 times? [Hint: try `jellyfish histo`]
 - Question 2b. What are the top 10 most frequently occurring kmers [Hint: try `jellyfish dump` along with `sort` and `head`]
-- Question 2c. What is the estimated genome size based on the kmer frequencies? [Hint: upload the jellyfish histogram to GenomeScope]
+- Question 2c. What is the estimated genome size based on the kmer frequencies? [Hint: upload the jellyfish histogram to [GenomeScope](http://genomescope.org)]
 - Question 2d. How well does the GenomeScope genome size estimate compare to the reference genome?
 
 #### Question 3. De novo assembly [10 pts]
@@ -43,13 +43,13 @@ Assemble the reads using `ALLPATHS-LG`. Allpaths will *not* run on Mac or Window
 - Question 4a. What is the average identify of your assembly compared to the reference? [Hint: try `dnadiff`]
 - Question 4b. What is the length of the longest alignment [Hint: try `nucmer` and `show-coords`]
 - Question 4c. How many insertions, deletions, and rearrangments are in the assembly? [Hint: try `dnadiff`]
-- Question 4d. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying `nucmer' and 'mummerplot']
+- Question 4d. Make a dotplot of your assembled contigs aligned to the reference genome? [Hint: trying `nucmer` and `mummerplot`]
 
 #### Question 5. Decoding the insertion [10 pts]
-- Question 5a. What is the position of the insertion on the reference? [Hint: try 'show-coords']
-- Question 5b. How long is the novel insertion? [Hint: try 'show-coords']
-- Question 5c. What is the DNA sequence of the encoded message? [Hint: try 'samtools faidx' to extract the insertion]
-- Question 5d. What is the secret message? [Hint: run 'dna-encode.pl -d' to decode the string from 5c]
+- Question 5a. What is the position of the insertion on the reference? [Hint: try `show-coords`]
+- Question 5b. How long is the novel insertion? [Hint: try `show-coords`]
+- Question 5c. What is the DNA sequence of the encoded message? [Hint: try `samtools faidx` to extract the insertion]
+- Question 5d. What is the secret message? [Hint: run `dna-encode.pl -d` to decode the string from 5c]
 
 
 ### Packaging
@@ -59,8 +59,26 @@ The solutions to the above questions should be submitted as a single PDF documen
 
 ### Resources
 
-- [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) - Raw read quality assessment
-- [Jellyfish](http://www.genome.umd.edu/jellyfish.html) - Fast Kmer Counting
+#### [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) - Raw read quality assessment
+
+Make sure to make the script executable so you can run it on the command line:
+```
+$ chmod +x fastqc
+$ ./fastqc /path/to/reads.fq
+```
+
+#### [Jellyfish](http://www.genome.umd.edu/jellyfish.html) - Fast Kmer Counting
+
+Download the package and compile it like this:
+
+```
+$ sudo apt-get install g++-4.7
+$ tar xzvf jellyfish-2.2.6.tgz
+$ cd jellyfish-2.2.6
+$ CXX=g++-4.7 ./configure --prefix=`pwd`
+$ make
+$ make install
+
 - [GenomeScope](http://www.genomescope.org/) - Analyze Kmer Profile to determine genome size and other properties
 - [ALLPATHS-LG](http://software.broadinstitute.org/allpaths-lg/blog/?page_id=12) - Short Read Assembler. Note: Only works under linux
 - [MUMmer](http://mummer.sourceforge.net/) - Whole Genome Alignment
