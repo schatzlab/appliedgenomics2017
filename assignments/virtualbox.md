@@ -26,7 +26,7 @@ While the installation formats your disk and copies files, a number of additiona
 
 The first thing that will probably happen is that the "Update Manager" wants you to update your Lubuntu system to the latest version of various applications. Simply click the "Install Updates" button and authenticate with your password, then watch the updates fly by as they are installed. Most likely you will need to restart again after all the updates, simply hit "Restart Now" if that's the case. Once this last reboot finishes, you have a completely up-to-date Lubuntu system to play with. Enjoy!
 
-### 5. Installing Additional Tools and Applications
+### 5. Installing Additional Tools and Applications (estimated time: 5 min)
 
 There are a few tools that you will want to add to Lubuntu right away. As the semester progresses, you'll start adding more and more tools and applications to Lubuntu, so we'll briefly explain the process for installing software here. The actual packages to install are listed below. If you find a cool package not yet listed, feel free to post a comment on the course's Piazza site to recommend it.
 
@@ -34,7 +34,7 @@ Most Unix systems, Lubuntu included, come with a package management system. This
 
 To install a new package click on the "Lubuntu" icon in the lower left corner of the screen, go to "System Tools" and start the "Synaptic Package Manager". You'll have to authenticate with your password again before you can continue. Click on the "Search" button at the top and enter the name of the package you want to install as your query. Once the search finishes look through the list of results to find the actual package. Once you have found the package, click on the box to the left of it and select "Mark for installation". At this point a window might pop up telling you what other packages need to be installed as well in order to install the package you want. Simply hit "Okay" to confirm. Then hit the "Apply" button at the top, which will pop up another confirmation dialog where you again hit "Apply" and then you can watch the packages get installed. Once the installation finishes, confirm again with the "Close" button. Then close the "Synaptic Package Manager" itself. Easy!
 
-### 6. Packages to Install
+### 6. Packages to Install (estimated time: 5 min)
 
 Here are some packages that will be useful regardless of the course/programming language you will be using. Check with your course instructor for language specific packages you will need to install.
 
@@ -51,19 +51,19 @@ There is also a command-line interface to the package management system, called 
 $ sudo apt-get install virtualbox-guest-utils virtualbox-guest-x11 virtualbox-guest-dkms vim vim-gtk emacs git
 ```
 
-### 7. Install VirtualBox Extension Pack 
+### 7. Install VirtualBox Extension Pack (estimated time: 5 min)
 
 You can only install the Extension pack after the operating system is install, but this will improve the performance of your virtual machine and make it easier to do things like resize the display. Download the extension pack from here: https://www.virtualbox.org/wiki/Downloads
 
-### 8. Using Lubuntu after installing
+### Using Lubuntu after installing
 
 When you restart your virtual box, you will need to reopen a terminal session to use your Lubuntu installation. In the lower left corner of the virtual box open the main menu -> SystemTools -> LXTerminal (or Accessories on older versions). Now you're back in your linux environment and can code away. You can also access a nice version of emacs through Accessories or the Programming menu options. It's good to work with several open windows - one for editting, one for compiling and running.
 
-### 9. Keeping Lubuntu Current
+### Keeping Lubuntu Current
 
 Lubuntu's Update Manager will pop up from time to time when new versions of various installed packages are available. Unless you are working on something really really important you should go ahead and install the updates to keep your system current. However, there is always a risk that an update will break things. That has never happened to me, but there's no guarantee that it won't happen in the future. So don't update things the day before an assignment is due, unless of course you cannot finish your assignment without the update. The sole exception to this is an entirely new Lubuntu release: Do not not NOT switch to a new release, stay with your current package updates for the entire course.
 
-### 10. Shutting Down Properly
+### Shutting Down Properly
 
 It's a really bad idea to quit your virtual Lubuntu machine by just closing the window or selecting "Quit" in the Virtual Box menu: That essentially means ripping the virtual power cord out of the virtual power plug, and hopefully you wouldn't do that to a real computer either. First type "exit" to close your terminal window. Then always use the "power button" in the lower right corner of the Lubuntu desktop to properly shutdown, otherwise you risk losing files or destroying your virtual machine entirely.
 
