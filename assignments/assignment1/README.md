@@ -62,14 +62,20 @@ The solutions to the above questions should be submitted as a single PDF documen
 #### [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) - Raw read quality assessment
 
 After downloading make sure to make the script executable so you can run it on the command line:
+
 ```
+$ unzip fastqc_v0.11.5.zip
+$ cd FastQC
 $ chmod +x fastqc
 $ ./fastqc /path/to/reads.fq
 ```
 
+If you have problems, make sure java is installed (`sudo apt-get install default-jre`)
+
+
 #### [Jellyfish](http://www.genome.umd.edu/jellyfish.html) - Fast Kmer Counting
 
-Jellyfish requires a 64-bit operating system. Download the package and compile it like this:
+Note Jellyfish requires a 64-bit operating system. Download the package and compile it like this:
 
 ```
 $ tar xzvf jellyfish-2.2.6.tgz
@@ -77,13 +83,51 @@ $ cd jellyfish-2.2.6
 ./configure --prefix=`pwd`
 $ make
 $ make install
+$ bin/jellyfish count -m 21 -C -s 1000000 /path/to/reads*.fq
+$ bin/jellyfish histo mer_counts.jf > reads.histo
 ```
 
 #### [GenomeScope](http://www.genomescope.org/) - Analyze Kmer Profile to determine genome size and other properties
 
+GenomeScope is a web-based tool so there is nothing to install. Hooray! Just make sure to use the `-C` when running jellyfish count so that the reads are correctly processed.
+
 ####  [ALLPATHS-LG](http://software.broadinstitute.org/allpaths-lg/blog/?page_id=12) - Short Read Assembler. Note: Only works under linux
+
+Allpaths requires an older version of the compiler (GCC 4.X) rather than what comes installed in Lubuntu. This will install the required version of the compiler and build the package. Note the syntax for the `configure` command where you specify which version of the compiler to use before the `./configure` command. Also note that ALLPATHS requires that you add its bin directory to your $PATH. You will need to use the `export` command listed here every time that you use ALLPATHS (or add it your `~/.bashrc` file)
+
+```
+$ sudo apt-get install gcc-4.8 g++-4.8
+$ tar xzvf LATEST_VERSION.tgz
+$ cd allpathslg-52488
+$ CXX=g++-4.8 ./configure --prefix=`pwd`
+$ make
+$ make install
+$ export PATH=`pwd`/bin/:$PATH
+$ 
+```
 
 #### [MUMmer](http://mummer.sourceforge.net/) - Whole Genome Alignment
 
+MUMmer requires a package called gnuplot to render the dotplot. You can install gnuplot using the following code. Also note that `mummerplot` requires an older version of perl to run. Rather than downgrading perl, you can use the version of code that is available here: https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/assignment1/mummerplot
+
+```
+$ sudo apt-get install gnuplot-x11
+$ tar xzvf MUMmer3.23.tar.gz
+$ cd MUMmer3.23
+$ make
+$ make install
+$ wget https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/assignment1/mummerplot
+$ ./nucmer /path/to/ref.fa /path/to/qry.fa
+$ ./mummerplot out.delta
+```
+
 #### [SAMTOOLS](http://www.htslib.org/) - Extract part of a genome sequence using 'samtools faidx'
 
+```
+$ sudo apt-get install libncurses5-dev zlib1g-dev
+$ tar xjvf samtools-1.3.1.tar.bz2
+$ cd samtools-1.3.1
+$ ./configure --prefix=`pwd`
+$ make
+$ make install
+```
