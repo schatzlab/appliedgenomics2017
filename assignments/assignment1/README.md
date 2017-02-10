@@ -103,7 +103,8 @@ $ CXX=g++-4.8 ./configure --prefix=`pwd`
 $ make
 $ make install
 $ export PATH=`pwd`/bin/:$PATH
-$ 
+$ PrepareAllPathsInputs.pl DATA_DIR=`pwd` PLOIDY=1 >& prepare.log
+$ RunAllPathsLG PRE=. REFERENCE_NAME=. DATA_SUBDIR=. RUN=default THREADS=2 >& run.log
 ```
 
 #### [MUMmer](http://mummer.sourceforge.net/) - Whole Genome Alignment
