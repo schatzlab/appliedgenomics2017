@@ -93,7 +93,7 @@ GenomeScope is a web-based tool so there is nothing to install. Hooray! Just mak
 
 ####  [ALLPATHS-LG](http://software.broadinstitute.org/allpaths-lg/blog/?page_id=12) - Short Read Assembler. Note: Only works under linux
 
-Allpaths requires an older version of the compiler (GCC 4.X) rather than what comes installed in Lubuntu. This will install the required version of the compiler and build the package. Note the syntax for the `configure` command where you specify which version of the compiler to use before the `./configure` command. Also note that ALLPATHS requires that you add its bin directory to your $PATH. You will need to use the `export` command listed here every time that you use ALLPATHS (or add it your `~/.bashrc` file)
+Allpaths requires an older version of the compiler (GCC 4.X) rather than what comes installed in Lubuntu. The following commands will install the required version of the compiler and build the package. Note the syntax for the `configure` command where you specify which version of the compiler to use before the `./configure` command. The `make` step will take a long time on the virtual machine (~1 hour) but if all goes well wont require any interaction during that time. Also note that ALLPATHS requires that you add its bin directory to your $PATH. You will need to use the `export` command listed here every time that you use ALLPATHS (or add it your `~/.bashrc` file).
 
 ```
 $ sudo apt-get install gcc-4.8 g++-4.8
@@ -109,7 +109,9 @@ $ RunAllPathsLG PRE=. REFERENCE_NAME=. DATA_SUBDIR=. RUN=default THREADS=2 >& ru
 
 #### [MUMmer](http://mummer.sourceforge.net/) - Whole Genome Alignment
 
-MUMmer requires a package called gnuplot to render the dotplot. You can install gnuplot using the following code. Also note that `mummerplot` requires an older version of perl to run. Rather than downgrading perl, you can use the version of code that is available here: https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/assignment1/mummerplot
+MUMmer requires a package called gnuplot to render the dotplot. You can install gnuplot using the following few commands. `mummerplot` requires an older version of perl to run but rather than downgrading perl, you can use the version of code that is available here: https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/assignment1/mummerplot
+
+You will need to edit line 19 of mummerplot (use lib "...") if you have MUMmer in a different directory.
 
 ```
 $ sudo apt-get install gnuplot-x11
