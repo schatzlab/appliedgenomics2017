@@ -133,4 +133,5 @@ $ cd samtools-1.3.1
 $ ./configure --prefix=`pwd`
 $ make
 $ make install
+$ ./samtools faidx /path/to/genome.fa
 ```
