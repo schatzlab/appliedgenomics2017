@@ -9,7 +9,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - Online introduction to Unix/Linux. Students are strongly recommended to complete one of the following online tutorials (or both) before class begins. 
   - [Code academy's Intro to Unix](https://www.codecademy.com/en/courses/learn-the-command-line/lessons/environment/exercises/bash-profile)
   - [Command line bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=9xnbkx6eaof)
-- Access to an Apple or Linux Machine, or Install [VirtualBox](https://www.virtualbox.org/)
+- Access to an Apple or Linux Machine, or Install [VirtualBox](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/virtualbox.md)
 
 ## Course Resources:
 - [Syllabus and Policies](https://github.com/schatzlab/appliedgenomics/tree/master/policies)
