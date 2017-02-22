@@ -11,6 +11,15 @@ http://www.osboxes.org/lubuntu/ (2.7 GB file, up to 8 GB required)
 3. Follow the directions here to import the virtual box:
 https://blogs.oracle.com/oswald/entry/importing_a_vdi_in_virtualbox
 
+   The key steps are (1) Name your Virtual Machine and Select the Operating System as 64 bit Ubuntu
+   ![Name](https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/virtualbox/NameVirtualMachine.png)
+
+   (2) Set the memory size to 4GB (or as much RAM as is available)
+   ![Memory](https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/virtualbox/MemorySize.png)
+
+   (3) Select the Lubuntu image as your virtual hard disk
+   ![HardDrive](https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/assignments/virtualbox/Hard%20Disk.png)
+
 4. When the install finishes, you will have a virtual machine called "Lubuntu 16.04 LTS" showing in the left menu of your VirtualBox device manager.  
 
 5. Double-click on this virtual machine to start it up (or single-click and then hit the "start" icon).  If you get an error message, read the details and follow the instructions to update as necessary.  (For example, you might have to install the Oracle VM Extension Pack from https://www.virtualbox.org/wiki/Downloads to get the USB controller to work.)
