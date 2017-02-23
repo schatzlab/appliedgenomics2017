@@ -18,6 +18,8 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 ## Related Courses
 - [Applied Comparative Genomics by Aaron Quinlan](https://github.com/quinlan-lab/applied-computational-genomics)
 - [Algorithms for DNA Sequencing by Ben Langmead](http://www.langmead-lab.org/teaching-materials/)
+- [Computational Biology by Rob Patro](https://rob-p.github.io/CSE549F16/lectures/)
+- [Biomedical Data Science by Mark Gerstein](http://cbb752b17.gersteinlab.org/)
 
 ## Schedule
 | # | Date | Lecture | Readings & Resources | Assignment |
