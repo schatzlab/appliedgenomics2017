@@ -1,0 +1,76 @@
+
+## Dump the read placements from the tigStore:
+
+$ cd /seq/schatz/mnattest/skbr3/local_assembly/assembly_HLA_Feb17/CA/r1
+
+$ /sonas-hs/schatz/hpc/home/gurtowsk/sources/wgs.svn/Linux-amd64/bin/tigStore -g r1.gkpStore -t r1.tigStore/ 1 -d layout -U | head -20
+
+unitig 0
+len 0
+cns
+qlt
+data.unitig_coverage_stat  1.000000
+data.unitig_microhet_prob  1.000000
+data.unitig_status         X
+data.unitig_suggest_repeat F
+data.unitig_suggest_unique F
+data.unitig_force_repeat   F
+data.unitig_force_unique   F
+data.contig_status         U
+data.num_frags             2884
+data.num_unitigs           0
+FRG type R ident     18318 container         0 parent     16010 hang   2962   1054 position  19674      0
+FRG type R ident      2248 container     18318 parent     18318 hang    217  -4192 position  15480    218
+FRG type R ident      8536 container      2248 parent      2248 hang    609  -4597 position    827  10881
+FRG type R ident     10602 container      2248 parent      2248 hang    848   -420 position  15057   1067
+FRG type R ident     16010 container         0 parent     18318 hang   1054   2962 position  22636   1089
+FRG type R ident      4611 container     18318 parent     18318 hang   1155  -3014 position   1157  16657
+
+
+
+## Figure out which unitig has the longest read in it:
+
+$ /sonas-hs/schatz/hpc/home/gurtowsk/sources/wgs.svn/Linux-amd64/bin/tigStore -g r1.gkpStore -t r1.tigStore/ 1 -d layout -U | awk '{if (/^unitig/){tig=$2}else if(/^FRG/){l=$15-$14;if(l<0){l*=-1;} print tig,l,$0}}' | sort -nrk2 | head -10 | column -t
+
+3   37839  FRG  type  R  ident  5708   container  0  parent  10683  hang  122   20199  position  416262  454101
+3   36519  FRG  type  R  ident  5022   container  0  parent  167    hang  1199  9553   position  402020  365501
+4   35962  FRG  type  R  ident  3652   container  0  parent  10438  hang  199   13564  position  15094   51056
+0   34550  FRG  type  R  ident  11392  container  0  parent  11328  hang  1010  18989  position  182086  216636
+15  34302  FRG  type  R  ident  2622   container  0  parent  5938   hang  6855  7174   position  948470  914168
+15  33695  FRG  type  R  ident  16040  container  0  parent  16226  hang  5741  9003   position  539963  573658
+15  33671  FRG  type  R  ident  5938   container  0  parent  11492  hang  3720  16069  position  941296  907625
+17  33504  FRG  type  R  ident  2341   container  0  parent  9030   hang  192   15632  position  382387  415891
+3   33148  FRG  type  R  ident  8132   container  0  parent  7619   hang  1171  14849  position  162425  129277
+3   32963  FRG  type  R  ident  5377   container  0  parent  14108  hang  1184  17010  position  102322  69359
+
+## Get the layout for all of unitig 3
+
+$ /sonas-hs/schatz/hpc/home/gurtowsk/sources/wgs.svn/Linux-amd64/bin/tigStore -g r1.gkpStore -t r1.tigStore/ 1 -d layout -u 3 | grep '^FRG' | awk '{r++; print r,$14,$15}' > ~/readid.start.stop.txt
+
+$ head -3 ~/readid.start.stop.txt
+1 0 19814
+2 799 19947
+3 1844 13454
+
+$ tail -3 ~/readid.start.stop.txt
+1871 973590 965902
+1872 966703 973521
+1873 973632 966946
+
+
+## Plot the read layout
+
+$ R
+> t<-read.table("readid.start.stop.txt")
+> plot(range(t[[2]],t[[3]]), range(t[[1]]), typ="n", xlab="position", ylab="readidx")
+> rect(t[[2]],t[[1]],t[[3]],t[[1]]+.5)
+
+
+## Compute the mean and max depth of coverage
+
+
+
+
+
+
+
