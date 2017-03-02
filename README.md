@@ -20,6 +20,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [Algorithms for DNA Sequencing by Ben Langmead](http://www.langmead-lab.org/teaching-materials/)
 - [Computational Biology by Rob Patro](https://rob-p.github.io/CSE549F16/lectures/)
 - [Biomedical Data Science by Mark Gerstein](http://cbb752b17.gersteinlab.org/)
+- [Bioinformatics Data Structures and Algorithms my Paul Medvedev](http://medvedevgroup.com/teaching.html)
 
 ## Schedule
 | # | Date | Lecture | Readings & Resources | Assignment |
