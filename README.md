@@ -21,6 +21,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [Computational Biology by Rob Patro](https://rob-p.github.io/CSE549F16/lectures/)
 - [Biomedical Data Science by Mark Gerstein](http://cbb752b17.gersteinlab.org/)
 - [Bioinformatics Data Structures and Algorithms my Paul Medvedev](http://medvedevgroup.com/teaching.html)
+- [String Algorithms by Carl Kingsford](http://www.cs.cmu.edu/~ckingsf/class/02-714/)
 
 ## Schedule
 | # | Date | Lecture | Readings & Resources | Assignment |
