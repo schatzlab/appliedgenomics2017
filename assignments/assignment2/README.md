@@ -11,7 +11,7 @@ Some of the tools you will need to use only run in a linux environment. If you d
 
 #### Question 1. Gene Annotation Preliminaries [10 pts]
 
-Download the annotation of build 38 of the human genome from here:
+Download the annotation of build 38 of the human genome from here: <br>
 [ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.gtf.gz](ftp://ftp.ensembl.org/pub/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh38.87.gtf.gz)
 
 - Question 1a. How many many GTF data lines are in this file? [Hint: The first few lines in the file beginning with "#" are so-called "header" lines describing thing like the creation date, the genome version (more on that later in the course), etc. Header lines should not be counted as data lines.]
@@ -25,7 +25,7 @@ Download the annotation of build 38 of the human genome from here:
 
 #### Question 2. Genome Sequence Analysis [10 pts]
 
-Download chromosome 22 from build 38 of the human genome from here:
+Download chromosome 22 from build 38 of the human genome from here: <br>
 [http://hgdownload.cse.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz](http://hgdownload.cse.ucsc.edu/goldenPath/hg38/chromosomes/chr22.fa.gz)
 
 - Question 2a. What is the length of chromosome 22? [Hint: You should include Ns in the length]
@@ -39,10 +39,11 @@ Download chromosome 22 from build 38 of the human genome from here:
 
 #### Question 3. Small Variant Analysis [10 pts]
 
-Download the read set from here: 
+Download the read set from here:<br> 
 [https://github.com/schatzlab/appliedgenomics/blob/master/assignments/assignment2/sample.tgz](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/assignment2/sample.tgz)
 
-For this question, you may find this tutorial helpful: [http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html](http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html)
+For this question, you may find this tutorial helpful: <br>
+[http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html](http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html)
 
 - Question 3a. How many single nucleotide and indel variants does the sample have? [Hint: Align reads using `bwa mem`, identify variants using `freebayes`, filter using `vcffilter -f "QUAL > 20"`, and summarize using `vcfstats`]
 
@@ -68,16 +69,16 @@ For this question, you should use the same reads and `bwa mem` alignments as que
 
 #### Question 5. De novo mutation analysis [10 pts]
 
-For this question, we will be focusing on the de novo variants identified in this paper:
+For this question, we will be focusing on the de novo variants identified in this paper:<br>
 [http://www.nature.com/articles/npjgenmed201627](http://www.nature.com/articles/npjgenmed201627)
 
-Download the bed file of variant positions from here:
-[https://github.com/schatzlab/appliedgenomics/blob/master/assignments/assignment2/denovo.bed](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/assignment2/denovo.bed)
+Download the de novo variant positions from here (Supplementary Table S4):<br>
+[http://www.nature.com/article-assets/npg/npjgenmed/2016/npjgenmed201627/extref/npjgenmed201627-s3.xlsx](http://www.nature.com/article-assets/npg/npjgenmed/2016/npjgenmed201627/extref/npjgenmed201627-s3.xlsx)
 
 Download the annotation of regulatory variants from here:<br>
 [ftp://ftp.ensembl.org/pub/release-87/regulation/homo_sapiens/homo_sapiens.GRCh38.Regulatory_Build.regulatory_features.20161111.gff.gz](ftp://ftp.ensembl.org/pub/release-87/regulation/homo_sapiens/homo_sapiens.GRCh38.Regulatory_Build.regulatory_features.20161111.gff.gz)
 
-- Question 5a. How many variants are in protein coding genes? [Hint: `bedtools`]
+- Question 5a. How many variants are in protein coding genes? [Hint: convert xlsx to BED, then `bedtools`]
 
 - Question 5b. How many variants are in *any* annotated regulatory regions? [Hint: `bedtools`]
 
