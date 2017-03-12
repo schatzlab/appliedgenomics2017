@@ -40,7 +40,7 @@ Download chromosome 22 from build 38 of the human genome from here: <br>
 #### Question 3. Small Variant Analysis [10 pts]
 
 Download the read set from here:<br> 
-[https://github.com/schatzlab/appliedgenomics/blob/master/assignments/assignment2/sample.tgz](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/assignment2/sample.tgz)
+[http://schatzlab.cshl.edu/data/teaching/sample.tgz](http://schatzlab.cshl.edu/data/teaching/sample.tgz)
 
 For this question, you may find this tutorial helpful: <br>
 [http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html](http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html)
