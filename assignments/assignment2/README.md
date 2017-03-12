@@ -45,7 +45,7 @@ Download the read set from here:<br>
 For this question, you may find this tutorial helpful: <br>
 [http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html](http://clavius.bc.edu/~erik/CSHL-advanced-sequencing/freebayes-tutorial.html)
 
-- Question 3a. How many single nucleotide and indel variants does the sample have? [Hint: Align reads using `bwa mem`, identify variants using `freebayes`, filter using `vcffilter -f "QUAL > 20"`, and summarize using `vcfstats`]
+- Question 3a. How many single nucleotide and indel variants does the sample have? [Hint: Align reads using `bwa mem`, identify variants using `freebayes`, filter using `vcffilter -f "QUAL > 20"`, and summarize using `vcfstats`; Make sure to set the read group when running bwa mem: `bwa mem -R "@RG\tID:id\tSM:sample\tLB:lib" chr22.fa pair.1.fq pair.2.fq`]
 
 - Question 3b. How many of the variants fall into genes? How many fall into exons? [Hint: `bedtools`]
  
