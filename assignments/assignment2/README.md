@@ -1,6 +1,6 @@
 ## Assignment 2: Variant Analysis
 Assignment Date: Tuesday, March 7, 2017 <br>
-Due Date: Tuesday, March 16, 2017 @ 11:59pm <br>
+Due Date: Thursday, March 16, 2017 @ 11:59pm <br>
 
 ### Assignment Overview
 
