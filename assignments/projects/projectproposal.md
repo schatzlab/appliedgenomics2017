@@ -17,7 +17,7 @@ The proposal should have the following components:
 After submitting your proposal, we will schedule a time to discuss your proposal, especially to ensure you have access to the data that you need. 
 The sooner that you submit your proposal, the sooner we can schedule the meeting. No late days can be used for this project.
 
-Later, you will present your project in class during the week of May 5. You will also submit a written report (5-7 pages) of your project, formatting as a Bioinformatics article (Intro, Methods, Results, Discussion, References). Word and LaTeX templates are available at phttps://academic.oup.com/bioinformatics/pages/submission_online](https://academic.oup.com/bioinformatics/pages/submission_online)
+Later, you will present your project in class during the week of May 5. You will also submit a written report (5-7 pages) of your project, formatting as a Bioinformatics article (Intro, Methods, Results, Discussion, References). Word and LaTeX templates are available at [https://academic.oup.com/bioinformatics/pages/submission_online](https://academic.oup.com/bioinformatics/pages/submission_online)
 
 Please use Piazza to coordinate proposal plans!
 
