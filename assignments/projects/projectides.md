@@ -93,7 +93,7 @@ Here are a few selected projects organized by theme, although you are also free 
 
 ## Biologically inspired computing
 
-1. Evaluate the methods for storing binary data as DNA sequences, and improve on them using long read sequencing 
+1. Evaluate the methods for storing binary data as DNA sequences: 
 [DNA Fountain](http://science.sciencemag.org/content/355/6328/950)
 
 2. Evaluate the amount of "junk data" in several widely used software packages
