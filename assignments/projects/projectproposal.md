@@ -4,9 +4,9 @@ Due Date: Thursday, March 30, 2017 @ 11:59pm <br>
 
 Review the [Project Ideas](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/projectides.md) page
 
-Form a team for your class project (no more than 3 people to a team) and email a PDF of your project proposal (~ 1/2 page) to  "jhuappliedgenomics at gmail dot com" by 11:59pm on March 30.
+Form a team for your class project (no more than 3 people to a team) and email a PDF of your project proposal (1/2 to 1 page) to  "jhuappliedgenomics at gmail dot com" by 11:59pm on March 30.
 
-Write a ~1 page proposal for your class project. The proposal should have the following components:
+The proposal should have the following components:
 - Name of your team
 - List of team members and email addresses
 - Short title for your proposal
