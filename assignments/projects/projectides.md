@@ -79,7 +79,7 @@ Here are a few selected projects organized by theme, although you are also free 
 [Short read benchmarks](http://www.nature.com/articles/ncomms10001)
 
 3. Metagenomics: Benchmark sailfish/salmon/kallisto approaches for inferring the abundance of different species present in a population
-(Meta-kalisto)[https://academic.oup.com/bioinformatics/article-abstract/doi/10.1093/bioinformatics/btx106/3038398/Pseudoalignment-for-metagenomic-read-assignment?redirectedFrom=fulltext]
+[Meta-kalisto](https://academic.oup.com/bioinformatics/article-abstract/doi/10.1093/bioinformatics/btx106/3038398/Pseudoalignment-for-metagenomic-read-assignment?redirectedFrom=fulltext)
 
 4. Develop a new metagenomics classifier using deep learning or other advanced ML techniques.
 [PhymmBL](http://www.nature.com/nmeth/journal/v6/n9/full/nmeth.1358.html)
