@@ -155,9 +155,9 @@ $ sudo apt install bwa
 
 #### [Lumpy](https://github.com/arq5x/lumpy-sv) - Structural Variation Detection
 
-Lumpy requires that samtools and sambamba are installed. You should have samtools installed from assignment 1. To install sambamba, you will first need to install the `lcd` package, which is a compiler for the D programming language.
+Lumpy requires that samblaster, samtools, and sambamba are installed as well as a few system libraries. You should have samtools installed from assignment 1. To install sambamba, you will first need to install the `lcd` package, which is a compiler for the D programming language.
 
-See the documentation [here](https://github.com/arq5x/lumpy-sv) to see how to make the splitters.bam and discordants.bam files from your sample.bam file.
+See the documentation [here](https://github.com/arq5x/lumpy-sv) to see how to make the splitters.bam and discordants.bam files from your sample.bam file (also see example below).
 
 ```
 # Install ldc and sambamba
@@ -177,16 +177,56 @@ $ cd lib/htslib/
 $ autoreconf
 $ cd ../../
 $ make
+$ cd ..
+
+# Now install samblaster
+$ git clone https://github.com/GregoryFaust/samblaster.git
+$ cd samblaster
+$ make
+$ cd ..
 
 # Now install pysam and numpy
-$ sudo apt install python-pip
+$ sudo apt install python-pip gawk
 $ pip install pysam
 $ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
-# Run lumpy, note you will need to edit your lumpyexpress config file with the paths to samtools and sambamba
+# Edit your bin/lumpyexpress config file with the paths to samblaster, samtools, and sambamba (using nano or similar). 
+# Here is my config, although you will probably need to change your paths
+
+$ cat lumpy-sv/bin/lumpyexpress.config 
+LUMPY_HOME=/home/osboxes/asn2/lumpy-sv/
+
+LUMPY=/home/osboxes/asn2/lumpy-sv//bin/lumpy
+SAMBLASTER=/home/osboxes/asn2/samblaster/samblaster
+SAMBAMBA=/home/osboxes/Downloads/sambamba/build/sambamba
+SAMTOOLS=/home/osboxes/Downloads/samtools-1.3.1/samtools
+PYTHON=/usr/bin/python
+
+PAIREND_DISTRO=/home/osboxes/asn2/lumpy-sv//scripts/pairend_distro.py
+BAMGROUPREADS=/home/osboxes/asn2/lumpy-sv//scripts/bamkit/bamgroupreads.py
+BAMFILTERRG=/home/osboxes/asn2/lumpy-sv//scripts/bamkit/bamfilterrg.py
+BAMLIBS=/home/osboxes/asn2/lumpy-sv//scripts/bamkit/bamlibs.py
+
+
+# Prepare the files for lumpy:
+# Extract the discordant paired-end alignments.
+$ samtools view -b -F 1294 sample.bam > sample.discordants.unsorted.bam
+
+# Extract the split-read alignments
+$ samtools view -h sample.bam \
+    | scripts/extractSplitReads_BwaMem -i stdin \
+    | samtools view -Sb - \
+    > sample.splitters.unsorted.bam
+
+# Sort both alignments
+$ samtools sort sample.discordants.unsorted.bam sample.discordants
+$ samtools sort sample.splitters.unsorted.bam sample.splitters
+
+# Now run lumpy
+
 $ lumpyexpress \
-    -B my.bam \
-    -S my.splitters.bam \
-    -D my.discordants.bam \
-    -o output.vcf
+    -B sample.bam \
+    -S sample.splitters.bam \
+    -D sample.discordants.bam \
+    -o lumpy.vcf
 ```
