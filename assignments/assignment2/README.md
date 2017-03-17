@@ -144,6 +144,15 @@ $ unzip snpEff_latest_core.zip
 $ snpEff/scripts/SnpEff eff -v -useLocalTemplate -stats sample.vcf.html GRCh38.86 sample.vcf 
 ```
 
+#### [BWA](http://bio-bwa.sourceforge.net/) - Short read aligner
+
+Lets just install it via `apt` 
+
+```
+$ sudo apt install bwa
+```
+
+
 #### [Lumpy](https://github.com/arq5x/lumpy-sv) - Structural Variation Detection
 
 Lumpy requires that samtools and sambamba are installed. You should have samtools installed from assignment 1. To install sambamba, you will first need to install the `lcd` package, which is a compiler for the D programming language.
@@ -160,9 +169,13 @@ $ make sambamba-ldmd2-64
 $ build/sambamba
 $ cd ..
 
-# Install lumpy
+# Install lumpy - note you have to manually configure htslib first
+$ sudo apt install autoconf libcurl4-openssl-dev libssl-dev
 $ git clone --recursive https://github.com/arq5x/lumpy-sv.git
 $ cd lumpy-sv
+$ cd lib/htslib/
+$ autoreconf
+$ cd ../../
 $ make
 
 # Run lumpy, note you will need to edit your lumpyexpress config file with the paths to samtools and sambamba
