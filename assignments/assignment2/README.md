@@ -178,6 +178,11 @@ $ autoreconf
 $ cd ../../
 $ make
 
+# Now install pysam and numpy
+$ sudo apt install python-pip and numpy
+$ pip install pysam
+$ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
 # Run lumpy, note you will need to edit your lumpyexpress config file with the paths to samtools and sambamba
 $ lumpyexpress \
     -B my.bam \
