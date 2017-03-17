@@ -179,7 +179,7 @@ $ cd ../../
 $ make
 
 # Now install pysam and numpy
-$ sudo apt install python-pip and numpy
+$ sudo apt install python-pip
 $ pip install pysam
 $ sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
