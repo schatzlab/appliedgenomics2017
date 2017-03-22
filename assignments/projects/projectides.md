@@ -96,7 +96,8 @@ Here are a few selected projects organized by theme, although you are also free 
 1. Evaluate and/or improve the methods for storing binary data as DNA sequences: 
 [DNA Fountain](http://science.sciencemag.org/content/355/6328/950)
 
-2. Evaluate the amount of "junk data" in several widely used software packages
-[Regulatory control of software](http://www.pnas.org/content/107/20/9186.abstract)
+2. Evaluate the amount of "junk data" in several widely used software packages:
+[Regulatory control of software](http://www.pnas.org/content/107/20/9186.abstract), 
+[Minimal Binary Executables](http://www.muppetlabs.com/~breadbox/software/tiny/teensy.html)
 
 ## Or your own idea!
