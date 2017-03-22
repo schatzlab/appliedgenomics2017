@@ -22,6 +22,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [Biomedical Data Science by Mark Gerstein](http://cbb752b17.gersteinlab.org/)
 - [Bioinformatics Data Structures and Algorithms my Paul Medvedev](http://medvedevgroup.com/teaching.html)
 - [String Algorithms by Carl Kingsford](http://www.cs.cmu.edu/~ckingsf/class/02-714/)
+- [HarvardX Biomedical Data Science](http://genomicsclass.github.io/book/pages/classes.html)
 
 ## Schedule
 | # | Date | Lecture | Readings & Resources | Assignment |
