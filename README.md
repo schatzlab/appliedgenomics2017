@@ -9,11 +9,14 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - Online introduction to Unix/Linux. Students are strongly recommended to complete one of the following online tutorials (or both) before class begins. 
   - [Code academy's Intro to Unix](https://www.codecademy.com/en/courses/learn-the-command-line/lessons/environment/exercises/bash-profile)
   - [Command line bootcamp](http://rik.smith-unna.com/command_line_bootcamp/?id=9xnbkx6eaof)
-- Access to aLinux Machine, or Install [VirtualBox](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/virtualbox.md) (Unfortuantely, even Mac will not work correctly for some programs)
+  - [Unix and Perl for Biologists](http://korflab.ucdavis.edu/Unix_and_Perl/)
+  - [Minimal Make](http://kbroman.org/minimal_make/)
+- Access to a Linux Machine, or Install [VirtualBox](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/virtualbox.md) (Unfortuantely, even Mac will not work correctly for some programs)
 
 ## Course Resources:
 - [Syllabus and Policies](https://github.com/schatzlab/appliedgenomics/tree/master/policies)
 - [Piazza Discussion Board](https://piazza.com/jhu/spring2017/600649/home)
+- 
 
 ## Related Courses
 - [Applied Comparative Genomics by Aaron Quinlan](https://github.com/quinlan-lab/applied-computational-genomics)
