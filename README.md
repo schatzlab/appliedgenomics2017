@@ -16,7 +16,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 ## Course Resources:
 - [Syllabus and Policies](https://github.com/schatzlab/appliedgenomics/tree/master/policies)
 - [Piazza Discussion Board](https://piazza.com/jhu/spring2017/600649/home)
-- 
+
 
 ## Related Courses
 - [Applied Comparative Genomics by Aaron Quinlan](https://github.com/quinlan-lab/applied-computational-genomics)
