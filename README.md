@@ -48,7 +48,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 | | Th 3/23 | *Spring Break!*
 |15. | Tu 3/28 | [Functional Analysis 3: Regulatory States](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/14.FunctionalGenomics3.pdf) | * [ChromHMM: automating chromatin-state discovery and characterization (Ernst & Kellis, 2012, Nature Methods)](http://www.nature.com/nmeth/journal/v9/n3/full/nmeth.1906.html) <br> * [Segway: Unsupervised pattern discovery in human chromatin structure through genomic segmentation (Hoffman et al, 2012, Nature Methods)](http://www.nature.com/nmeth/journal/v9/n5/full/nmeth.1937.html) |
 |16. | Th 3/30 | [Functional Analysis 4: ENCODE](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/15.FunctionalGenomics4.pdf) | * [An integrated encyclopedia of DNA elements in the human genome (The ENCODE Project Consortium, Nature, 2012)](http://www.nature.com/nature/journal/v489/n7414/full/nature11247.html) |
-|17. | Tu 4/4  | Midterm Review
+|17. | Tu 4/4  | [Midterm Review](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/16.MidTermReview.pdf)
 |18. | Th 4/6  | Midterm Exam
 |19. | Tu 4/11 | Human Evolution | Ancient Hominids, Mammalian Evolution, LUCA |
 |20. | Th 4/13 | Microbiome and Metagenomics | HMP, Kraken, MEGAN, PhymmBL |
