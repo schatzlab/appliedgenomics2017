@@ -50,10 +50,10 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 |16. | Th 3/30 | [Functional Analysis 4: ENCODE](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/15.FunctionalGenomics4.pdf) | * [An integrated encyclopedia of DNA elements in the human genome (The ENCODE Project Consortium, Nature, 2012)](http://www.nature.com/nature/journal/v489/n7414/full/nature11247.html) |
 |17. | Tu 4/4  | [Midterm Review](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/16.MidTermReview.pdf)
 |18. | Th 4/6  | Midterm Exam
-|19. | Tu 4/11 | Human Evolution | Ancient Hominids, Mammalian Evolution, LUCA |
-|20. | Th 4/13 | Microbiome and Metagenomics | HMP, Kraken, MEGAN, PhymmBL |
-|21. | Tu 4/18 | Cancer Genomics 1 | TCGA, ICGC, Cellularity, Clonality, Tumor Evolution |
-|22. | Th 4/20 | Cancer Genomics 2 | FunSeq, GECCO, HotNet |
+|19. | Tu 4/11 | [Midterm Discussion](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/17.MidTermDiscussion.pdf)
+|20. | Th 4/13 | [Human Evolution](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/18.HumanEvolution.pdf) | * [An integrated map of genetic variation from 1,092 human genomes (1000 Genomes Consortium, 2012, Nature](http://www.nature.com/nature/journal/v491/n7422/full/nature11632.html) <br> * [A Draft Sequence of the Neandertal Genome (Green et al. 2010, Science)](http://science.sciencemag.org/content/328/5979/710.full) |
+|21. | Tu 4/18 | Microbiome and Metagenomics | HMP, Kraken, MEGAN, PhymmBL |
+|22. | Th 4/20 | Cancer Genomics 1 | TCGA, ICGC, Cellularity, Clonality, Tumor Evolution |
 |23. | Tu 4/25 | Genomic Futures 1 | Personalized Medicine (AlleleSeq, SnyderOme, Prenatal screeing), Genomic Privacy (Surname Inference) |
 |24. | Th 4/27 | Genomic Futures 2 | Digital Immune System |
 |25. | Tu 5/2  | Project Presentations 1 |
