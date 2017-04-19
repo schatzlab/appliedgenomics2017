@@ -17,7 +17,6 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [Syllabus and Policies](https://github.com/schatzlab/appliedgenomics/tree/master/policies)
 - [Piazza Discussion Board](https://piazza.com/jhu/spring2017/600649/home)
 
-
 ## Related Courses
 - [Applied Comparative Genomics by Aaron Quinlan](https://github.com/quinlan-lab/applied-computational-genomics)
 - [Algorithms for DNA Sequencing by Ben Langmead](http://www.langmead-lab.org/teaching-materials/)
@@ -26,6 +25,8 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [Bioinformatics Data Structures and Algorithms my Paul Medvedev](http://medvedevgroup.com/teaching.html)
 - [String Algorithms by Carl Kingsford](http://www.cs.cmu.edu/~ckingsf/class/02-714/)
 - [HarvardX Biomedical Data Science](http://genomicsclass.github.io/book/pages/classes.html)
+- [PLOS Computational Biology Translational Bioinformatics](http://collections.plos.org/translational-bioinformatics)
+
 
 ## Schedule
 | # | Date | Lecture | Readings & Resources | Assignment |
