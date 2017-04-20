@@ -1,0 +1,307 @@
+---
+title: "Adventures in Overfitting!"
+author: Michael Schatz (mschatz@jhu.edu)
+date: April 20, 2017
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: paper
+    keep_md: true
+---
+
+
+# Generate some noisy data
+*********************************************************************************************
+
+## Generate the true relationship
+
+```{r}
+## Initialize Random Number Generator so plots are consistent
+set.seed(20)
+
+## Now compute points along a cubic function
+q <- seq(from=-15, to=15, by=.5)
+y <- q*q*q-3*q*q-144*q+432
+plot(q,y,col='firebrick1',lwd=3, typ="l", ylim=c(min(y)-200, max(y)+200))
+```
+
+
+
+## Generate random noise
+
+```{r}
+noise <- rnorm(length(q), mean=0, sd=333)
+hist(noise)
+```
+
+## Add noise to original dataset
+
+```{r}
+noisy.y <- y + noise
+plot(q,y,col='firebrick1',lwd=3, typ="l", ylim=c(min(y)-200, max(y)+200))
+points(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+```
+
+
+# Fitting Lines to (multiple) points
+*********************************************************************************************
+
+##  Given any two points I can draw a straight line between them!
+
+### Start by trying the first and last point
+
+```{r}
+i1 <- 1
+i2 <- length(q)
+
+q2 <- c(q[i1],q[i2])
+ny2 <- c(noisy.y[i1], noisy.y[i2])
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+points(q2,ny2,col='red',xlab='q',main='Observed data', pch=19)
+
+model1 <- lm(ny2 ~ q2)
+abline(a=model1$coefficients[1], b=model1$coefficients[2], col="green", lwd=3)
+```
+
+
+
+### pick another pair
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+points(q2,ny2,col='red',xlab='q',main='Observed data', pch=19)
+abline(a=model1$coefficients[1], b=model1$coefficients[2], col="green", lwd=3)
+
+i1 <- 1
+i2 <- floor(length(q)/2)
+
+q2 <- c(q[i1],q[i2])
+ny2 <- c(noisy.y[i1], noisy.y[i2])
+
+model1 <- lm(ny2 ~ q2)
+points(q2,ny2,col='red',xlab='q',main='Observed data', pch=19)
+abline(a=model1$coefficients[1], b=model1$coefficients[2], col="green", lwd=3)
+```
+
+
+
+### find lines to all other points
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+lines(q,y,col='firebrick1',lwd=3)
+
+for (i2 in seq(2,length(q))){
+  q2 <- c(q[i1],q[i2])
+  ny2 <- c(noisy.y[i1], noisy.y[i2])
+  model1 <- lm(ny2 ~ q2)
+
+  points(q2,ny2,col='red',xlab='q',main='Observed data', pch=19)
+  abline(model1, col="green", lwd=3)
+}
+```
+
+
+
+
+
+## Given any three points, I can draw a quadradic between them!
+
+### First, last, middle points
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+
+i1 <- 1
+i2 <- floor(length(q)/2)
+i3 <- length(q)
+
+q3 <- c(q[i1],q[i2],q[i3])
+ny3 <- c(noisy.y[i1], noisy.y[i2], noisy.y[i3])
+points(q3,ny3,col='red',pch=19)
+
+model2 <- lm(ny3 ~ poly(q3, 2, raw=TRUE))
+model2.y <- model2$coefficients[3]*q*q + model2$coefficients[2]*q + model2$coefficients[1]
+lines(q, model2.y, col="green",lwd=3)
+```
+
+
+### Pick 3 new points
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+
+i1 <- 1
+i3 <- floor(3*length(q)/4)
+i2 <- floor(i3/2)
+
+q3 <- c(q[i1],q[i2],q[i3])
+ny3 <- c(noisy.y[i1], noisy.y[i2], noisy.y[i3])
+points(q3,ny3,col='red',pch=19)
+
+model2 <- lm(ny3 ~ poly(q3, 2, raw=TRUE))
+model2.y <- model2$coefficients[3]*q*q + model2$coefficients[2]*q + model2$coefficients[1]
+lines(q, model2.y, col="green",lwd=3)
+```
+
+
+
+### Fit a bunch of triples
+
+```{r}
+
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+
+for (i3 in seq(4,length(q))){
+  i1 <- 1
+  i2 <- floor(i3/2)
+
+  q3 <- c(q[i1],q[i2],q[i3])
+  ny3 <- c(noisy.y[i1], noisy.y[i2], noisy.y[i3])
+
+  model2 <- lm(ny3 ~ poly(q3, 2, raw=TRUE))
+  model2.y <- model2$coefficients[3]*q*q + model2$coefficients[2]*q + model2$coefficients[1]
+  points(q3,ny3,col='red',pch=19)
+  lines(q, model2.y, col="green",lwd=3)
+}
+```
+
+
+
+## Given any four points, I can draw a cubic between them!
+
+
+### First, 1/3, 2/3, last
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+
+i1 <- 1
+i2 <- floor(length(q)/3)
+i3 <- floor(2*length(q)/4)
+i4 <- length(q)
+
+q4 <- c(q[i1],q[i2],q[i3], q[i4])
+ny4 <- c(noisy.y[i1], noisy.y[i2], noisy.y[i3], noisy.y[i4])
+points(q4,ny4,col='red',pch=19)
+
+model3 <- lm(ny4 ~ poly(q4, 3, raw=TRUE))
+model3.y <- model3$coefficients[4]*q*q*q + 
+            model3$coefficients[3]*q*q + 
+            model3$coefficients[2]*q + 
+            model3$coefficients[1]
+lines(q, model3.y, col="green",lwd=3)
+```
+
+### Shifted First, 1/3, 2/3, last
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+
+i1 <- 10
+i2 <- floor(length(q)/3)
+i3 <- floor(2*length(q)/4)
+i4 <- length(q)-10
+
+q4 <- c(q[i1],q[i2],q[i3], q[i4])
+ny4 <- c(noisy.y[i1], noisy.y[i2], noisy.y[i3], noisy.y[i4])
+points(q4,ny4,col='red',pch=19)
+
+model3 <- lm(ny4 ~ poly(q4, 3, raw=TRUE))
+model3.y <- model3$coefficients[4]*q*q*q + 
+            model3$coefficients[3]*q*q + 
+            model3$coefficients[2]*q + 
+            model3$coefficients[1]
+lines(q, model3.y, col="green", lwd=3)
+```
+
+
+
+## Given n points, I can draw a n-1 degree polynomial between them!
+
+
+### Pick 10 points at random
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+
+n <- 10
+i <- sort(sample(1:length(q), n))
+
+qq <- q[i]
+yy <- noisy.y[i]
+
+points(qq,yy,col='red', pch=19)
+modeln <- lm(yy ~ poly(qq, n-1, raw=TRUE))
+py <- predict(modeln, data.frame(qq=q))
+lines(q, py, col="green",lwd=3)
+```
+
+
+### rescale so you can see the full function
+
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q', main='Observed data', pch=19,
+     ylim=c(min(noisy.y)*30, max(noisy.y)*10))
+points(qq,yy,col='red', pch=19)
+lines(q, py, col="green",lwd=3)
+```
+
+
+
+
+
+# Linear and Polynomial Regression
+*********************************************************************************************
+
+## Lets do something more useful and find the best fit line through the points
+
+### Best linear model
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+lines(q,y,col='firebrick1',lwd=3, typ="l", ylim=c(min(y)-200, max(y)+200))
+model1 <- lm(noisy.y ~ poly(q,1,raw=TRUE))
+yy1    <- predict(model1)
+lines(q,yy1, col="green", lwd=3)
+```
+
+
+### Best quadradic model
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+lines(q,y,col='firebrick1',lwd=3, typ="l", ylim=c(min(y)-200, max(y)+200))
+model2 <- lm(noisy.y ~ poly(q,2,raw=TRUE))
+yy2    <- predict(model2)
+lines(q,yy2, col="orange", lwd=3)
+```
+
+### Best cubic model
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+lines(q,y,col='firebrick1',lwd=3, typ="l", ylim=c(min(y)-200, max(y)+200))
+model3 <- lm(noisy.y ~ poly(q,3,raw=TRUE))
+yy3    <- predict(model3)
+lines(q,yy3, col="gold", lwd=3)
+```
+
+
+### Best 30th degree model
+```{r}
+plot(q,noisy.y,col='deepskyblue4',xlab='q',main='Observed data', pch=19)
+lines(q,y,col='firebrick1',lwd=3, typ="l", ylim=c(min(y)-200, max(y)+200))
+model30 <- lm(noisy.y ~ poly(q,30,raw=TRUE))
+yy30    <- predict(model30)
+lines(q,yy30, col="purple", lwd=3)
+```
+
+## Final Thoughts
+
+The 30 degree model "matches" the data better than the 3rd degree, but is clearly overfit
+and probably wont do a good job representing any new data that we collect. In addition to finding 
+curves that smooth datasets, these types of lines are often used to predict disease outcomes
+(above curve=cancer, below=benign). If we overfit the boundary to a dataset, we probably
+wont do a very good job classifying new cases as they come in. 
+
+*Remember: The chances for overfitting increase with the number of parameters used!*
+
