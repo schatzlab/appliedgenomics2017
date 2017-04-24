@@ -28,7 +28,7 @@ Th 5/4  | 2:30-2:45 | Rock & “Role”          	| Gherman Uritskiy, Peter DeFo
 2. Intro 1: Whats the big idea???
 3. Intro 2: More specifically, what are you trying to learn?
 4. Methods 1: What did you try?
-5. Methods 2: What else did you try?
+5. Methods 2: What is the key idea?
 6. Data 1: What data are you looking at?
 7. Data 2: Anything notable about the data?
 8. Results 1: What did you see!
