@@ -21,6 +21,8 @@ Th 5/4  | 2:00-2:15 | DeepWorker              | Guangyu Yang                    
 Th 5/4  | 2:15-2:30 | GenomeScope 2           | Ravi Gaddipati, Rhyker Ranallo-Benavidez   | EGSP: Extending GenomeScope Ploidy
 Th 5/4  | 2:30-2:45 | Rock & “Role”          	| Gherman Uritskiy, Peter DeFord, Xiuqi Chen | Investigating symbiotic roles for nutrient acquisition in a metatranscriptome analysis in rock colonies from the Atacama Desert
     
+<br>
+<br>
 
 ## Recommended outline for your talk (1 minute per slide):
 
