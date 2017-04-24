@@ -56,9 +56,9 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 |21. | Tu 4/18 | [Human Genetic Diseases](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/19.DiseaseGenetics.pdf) | * [Genome-Wide Association Studies (Bush & Moore, 2012, PLOS Comp Bio)](https://doi.org/10.1371/journal.pcbi.1002822) <br> * [The contribution of de novo coding mutations to autism spectrum disorder (Iossifov et al, 2014, Nature)](https://www.nature.com/nature/journal/v515/n7526/full/nature13908.html)
 |22. | Th 4/20 | [Cancer Genomics](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/20.CancerGenetics.pdf) & [Adventures in Overfitting](http://htmlpreview.github.io/?https://raw.githubusercontent.com/schatzlab/appliedgenomics/master/lectures/20.overfitting/overfitting.html) | * [The Hallmarks of Cancer (Hanahan & Weinberg, 2000, Cell)](http://www.sciencedirect.com/science/article/pii/S0092867400816839) <br> * [Evolution of Cancer Genomes (Yates & Campbell, 2012, Nature Reviews Genetics)](http://www.nature.com/nrg/journal/v13/n11/full/nrg3317.html) <br> * [Comprehensive molecular portraits of human breast tumours (TCGA, 2012, Nature)](http://www.nature.com/nature/journal/v490/n7418/full/nature11412.html) | [Preliminary Project Report](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/preliminaryreport.md)
 |23. | Tu 4/25 | Microbiome and Metagenomics | HMP, Kraken, MEGAN, PhymmBL |
-|24. | Th 4/27 | Genomic Futures | Personalized Medicine (AlleleSeq, SnyderOme, Prenatal screeing), Genomic Privacy (Surname Inference) |
-|25. | Tu 5/2  | Project Presentations 1 |
-|26. | Th 5/4  | Project Presentations 2 |
+|24. | Th 4/27 | Genomic Futures | Personalized Medicine (AlleleSeq, SnyderOme, Prenatal screeing), Genomic Privacy (Surname Inference) | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md)
+|25. | Tu 5/2  | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md) | | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md)
+|26. | Th 5/4  | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md) | | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md)
 |27. | Wed 5/17 | Final Project Report Due! |
 
 
