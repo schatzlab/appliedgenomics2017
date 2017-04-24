@@ -1,7 +1,7 @@
 # JHU EN.600.649: Computational Genomics: Applied Comparative Genomics
 ## Project Presentations
 
-Presentations will be a total of 15 minutes: 12 minutes for the presentation, followed by 3 minutes for questions. We will strictly keep to the schedule to ensure that all groups can present in the 2 class periods. 
+Presentations will be a total of 15 minutes: 12 minutes for the presentation, followed by 3 minutes for questions. We will strictly keep to the schedule to ensure that all groups can present in class. 
 
 ## Schedule of Presentations
 
