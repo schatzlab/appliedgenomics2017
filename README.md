@@ -59,6 +59,6 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 |24. | Th 4/27 | [Genomic Futures](https://github.com/schatzlab/appliedgenomics/blob/master/lectures/22.FinalThoughts.pdf) | * ["Snyderome" Personal Omics Profiling Reveals Dynamic Molecular and Medical Phenotypes (Chen et al, 2012, Cell)](http://www.sciencedirect.com/science/article/pii/S0092867412001663) <br> * [Identifying Personal Genomes by Surname Inference (Gymrek et al, 2013, Science)](http://science.sciencemag.org/content/339/6117/321) | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md)
 |25. | Tu 5/2  | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md) | | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md)
 |26. | Th 5/4  | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md) | | [Project Presentations](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/presentationschedule.md)
-|27. | Wed 5/17 | Final Project Report Due! |
+|27. | Wed 5/17 | Final Project Report Due! | | [Project Report](https://github.com/schatzlab/appliedgenomics/blob/master/assignments/projects/projectproposal.md)
 
 
