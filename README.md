@@ -17,7 +17,7 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [Syllabus and Policies](https://github.com/schatzlab/appliedgenomics/tree/master/policies)
 - [Piazza Discussion Board](https://piazza.com/jhu/spring2017/600649/home)
 
-## Related Courses
+## Related Courses & Readings
 - [Applied Comparative Genomics by Aaron Quinlan](https://github.com/quinlan-lab/applied-computational-genomics)
 - [Algorithms for DNA Sequencing by Ben Langmead](http://www.langmead-lab.org/teaching-materials/)
 - [Computational Biology by Rob Patro](https://rob-p.github.io/CSE549F16/lectures/)
