@@ -26,8 +26,8 @@ Office Hours: Tuesday + Thursday @ 3-4p in Malone 323 and by appointment
 - [String Algorithms by Carl Kingsford](http://www.cs.cmu.edu/~ckingsf/class/02-714/)
 - [HarvardX Biomedical Data Science](http://genomicsclass.github.io/book/pages/classes.html)
 - [PLOS Computational Biology Translational Bioinformatics](http://collections.plos.org/translational-bioinformatics)
-- [Molecular Biology of the Gene (Watson et al)](https://archive.org/details/WatsonMolecularBiologyOfTheGene7thEditionC2014Txtbk)
-- [Biological Sequence Analysis (Durbin et al)](http://dnapunctuation.org/~poptsova/course/Durbin-Et-Al-Biological-Sequence-Analysis-CUP-2002-No-OCR.pdf)
+- [Molecular Biology of the Gene (Watson et al)](https://www.amazon.com/Molecular-Biology-Gene-James-Watson/dp/0321762436/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=R6A5BW06E5RJB7GVSNPY)
+- [Biological Sequence Analysis (Durbin et al)](https://www.amazon.com/Biological-Sequence-Analysis-Probabilistic-Proteins/dp/0521629713)
 
 
 ## Schedule
