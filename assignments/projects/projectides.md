@@ -1,11 +1,11 @@
 # Project Ideas
 
-Here are a few selected projects organized by theme, although you are also free to present your own project ideas. A good project is one that (1) has a well defined goal; (2) has a well defined method proposed for solving it; and (3) has appropriate data and resources available. If any of these three characteristics are not available, your project will not be successful, especially in the limited time remaining for class. A successful model for the class project is to apply a technique developed in a different context to the biological problem of your choice. Another successful model is to identify an important paper of interest and then try to improve apon their method in some way (faster, less memory, more sensitive, more precise, etc).
+Here are a few selected projects organized by theme, although you are also free to present your own project ideas. A good project is one that (1) has a well defined goal; (2) has a well defined method proposed for solving it; and (3) has appropriate data and resources available. If any of these three are not available, your project will not be successful, especially in the limited time remaining for class. A successful model for the class project is to apply a technique developed in a different context to the biological problem of your choice. Another successful model is to identify an important paper of interest and then try to improve apon their method in some way (faster, less memory, more sensitive, more precise, etc).
 
 
 ## Basecalling and signal processing
 
-1. Develop an improved base calling algorithm (potentially methylation aware) for Oxford Nanopore or PacBio sequencing using recurrent neural networks or other ML approach:
+1. Develop an improved base calling algorithm (potentially modification aware) for Oxford Nanopore or PacBio sequencing using recurrent neural networks or other ML approach:
 [Nanocall](https://academic.oup.com/bioinformatics/article/33/1/49/2525680/Nanocall-an-open-source-basecaller-for-Oxford),
 [Nanopolish for Methylation](http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.4184.html?WT.feed_name=subjects_computational-biology-and-bioinformatics)
 
@@ -18,7 +18,7 @@ Here are a few selected projects organized by theme, although you are also free 
 1. Extend GenomeScope to infer the genome characteristics of genomes with long, error-prone reads:
 [GenomeScope](http://biorxiv.org/content/early/2017/02/28/075978)
 
-2. Develop a de novo assembler for polyploid genomes. Note you *should* use existing tools for overlapping, and focus on unitting/scaffolding:
+2. Benchmark and/or develop a de novo assembler for polyploid genomes. Note you *should* use existing tools for overlapping, and focus on unitting/scaffolding:
 [FALCON](http://www.nature.com/nmeth/journal/v13/n12/full/nmeth.4035.html)
 
 3. Benchmark and/or develop a scaffolder that can use long range information from 10X or HiC: 
@@ -63,10 +63,10 @@ Here are a few selected projects organized by theme, although you are also free 
 7. Develop ChromHMM/Segway postprocessing algorithm to label the states with their biological functions:
 [Segway Protocol](http://biorxiv.org/content/early/2016/10/17/080382)
 
-8. Explore how single cell analysis works with minimal amounts of coverage. Reproduce the results from the Monocle paper, and experiment with how well it performs using lower amounts of coverage:
+8. Explore how single cell analysis works with minimal amounts of coverage. For example, reproduce the results from the Monocle paper, and experiment with how well it performs using lower amounts of coverage:
 [Monocle](http://www.nature.com/nbt/journal/v32/n4/abs/nbt.2859.html)
 
-9. Benchmark how different single cell pipelines work at recognizing different cell types
+9. Benchmark how different single cell pipelines work at recognizing different cell types:
 [MetaNeighbor](https://www.nature.com/articles/s41467-018-03282-0)
 
 ## Evolution and Disease Genomics
